@@ -1,9 +1,16 @@
+:root{
+    --formcolor:white;
+    --etccolor:rgb(212, 220, 222);
+    --bluecolor: hsl(197, 45%, 43%);
+}
+
+
 body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 
 #all{
     display: flex;
@@ -15,7 +22,7 @@ body{
     background-position: center;
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 3;
     min-height: 100vh;
     justify-content: space-between;
 }
@@ -24,7 +31,8 @@ body{
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    flex: 4;
+    flex: 5;
+    background-color: var(--etccolor);
 }
 
 
@@ -36,6 +44,7 @@ body{
 
 #odbackground{
     background-color: rgba(0, 255, 255, 0.14);
+    background-color: var(--bluecolor);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +62,63 @@ body{
 .photographer a{
     text-decoration: none;
     color: aqua;
+
+}
+
+#formatt{
+    background-color: var(--formcolor);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.inpyts{
+    padding: 10px;
+    display: flex;
+    column-gap: 60px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+.row input{
+    height: 30px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.paragraph, .login , h4{
+    padding-left: 40px;
 }
 
 
+button{
+    margin: 40px;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-color: transparent;
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    color: white;
+    background-color: hsl(197, 45%, 43%);
+}
 
+.login a{
+    text-decoration: none;
+    color:var(--bluecolor);
+}
+
+
+.paragraph{
+    padding-top: 40px;
+    max-width: 700px;
+    font-size: 23px;
+    font-weight:500;
+}
